@@ -44,7 +44,7 @@
 									$extention = strtolower(substr($file, strlen($file)-3));
 									if($extention == "jpg" OR $extention == "gif" OR $extention == "png")
 									{
-										echo '<img src="'.url::base().'themes/activarian/images/howto/'.$file.'"/>';
+										echo '<img width="559px" height="220px" src="'.url::base().'themes/activarian/images/howto/'.$file.'"/>';
 									}
 								}
 								
