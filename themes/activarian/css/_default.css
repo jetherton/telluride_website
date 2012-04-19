@@ -1,0 +1,301 @@
+/*
+Theme Name: Activian
+Version: 1.0
+Author: John Etherton
+Author Email: john@ethertontech.com
+*/
+
+
+/* Theme Settings
+--------------------*/
+  
+/* Primary Color */
+h1, a,
+table.table-list tbody tr td a,
+.hover .r_details h3 a.r_title,
+div.footermenu ul li a,
+div.search-form input.text  { color: #C40000; }
+div.search-form input.text:focus,{ border-color: #C40000; }
+div.submit-incident a, .btn_submit,
+div.filters ul li a:hover, div.filters ul li a.active,
+ul.category-filters li a:hover, ul.category-filters li a.active { background-color:#C40000; }
+
+/* Lighter Primary Color - for hover effects */
+div#loggedin_user_action a, div#loggedin_user_action a:visited { color:#e50000; }
+div.submit-incident a:hover, .btn_submit:hover,
+div.search-form input.searchbtn { background-color:#e50000; }
+div#mainmenu ul li a:hover, div#mainmenu a.active { border-color:#e50000; }
+
+/* Accent Color - used on the primary nav and in the footer area */
+div#mainmenu,
+div#mainmenu ul li a,
+div.additional-content { border-color:#FFC1C1; }
+div#underfooter { background:#FFC1C1; }
+  
+  /* Page Background Pattern */
+  /*----------------------*/
+  body#page { background-color:#FFF; }
+
+
+/* Feel free to edit these, but you don't have to. */
+
+/* general styles */
+h1 {
+  font-family: 'PT Sans Narrow', arial, sans-serif;
+  font-size: 25px;
+}
+h2 {
+  color: #666;
+}
+h5, h4 {
+  color: #666;
+  font-family: 'PT Sans Narrow', arial, sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+/* structural divs */
+div#middle {
+  background-color: none;
+}
+.big-block {
+  margin-bottom: 26px;
+  padding: 16px 0px 10px;
+}
+div#main {
+  background: #fff;
+  padding: 15px 18px;
+  border: 5px solid #EFEFEF;
+  margin-top: 18px;
+}
+/* top-bar */
+#top-bar {
+  width: 100%;
+  background: #000;
+  height: 40px;
+  position: relative;
+}
+div#searchbox {
+  position: absolute;
+  right: 0;
+  border: none;
+  background: transparent;
+  width: auto;
+}
+div#loggedin_user_action {
+  float: left;
+  width: auto;
+}
+div#loggedin_user_action a, div#loggedin_user_action a:visited {
+  font-weight: bold;
+  padding: 6px;
+  margin-top: 2px;
+  width: auto;
+  display: block;
+  float: left;
+}
+div.search-form input.text {
+  border: 1px solid;
+}
+div.search-form input.text:focus {
+  border: 1px solid;
+}
+div.search-form input.searchbtn {
+  width: auto;
+  height: auto;
+  border: 0;
+  text-indent: 0;
+  color: #FFFFFF;
+  display: block;
+  font-size: 12px;
+  background-image:none;
+  margin-left: 10px;
+  line-height: 17px;
+  padding: 2px 5px 3px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 #424242;
+}
+
+/* header */
+/* logo box */
+div#logo {
+  background: transparent;
+  padding-left: 0;
+}
+div#logo h1 a {
+  color: #fff;
+  font-family: 'PT Sans Narrow', arial, sans-serif;
+  font-size: 48px;
+}
+div#logo span {
+  font-style: italic;
+  color: #cc3333;
+  font-family: 'Georgia', serif;
+}
+/* submit report button (in the site header and on the "submit a report" page) */
+div.submit-incident a, .btn_submit {
+  text-shadow: 1px 1px 0 #424242;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+/* primary nav */
+div#mainmenu {
+  background: none;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  padding: 0;
+  position: relative;
+}
+div#mainmenu ul {
+  position: relative;
+  bottom: -4px;
+}
+div#mainmenu ul li {
+  margin: 0;
+}
+div#mainmenu ul li a {
+  font-family: arial, sans-serif;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+}
+div#mainmenu ul li a:hover, div#mainmenu a.active {
+  color: inherit;
+  background: transparent;
+}
+/* home page map filters */
+div.filters ul li a {
+  color: #666;
+}
+div.filters ul li a:hover, div.filters ul li a.active {
+  text-shadow: 1px 1px 0 #424242;
+  color:#fff;
+}
+/* home page category filter */
+div.cat-filters {
+  /*border-bottom:1px solid #F3686D;*/
+}
+ul.category-filters {
+  border: 5px solid #C4C4C4;
+}
+.swatch, .item-swatch {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+ul.category-filters li a:hover, ul.category-filters li a.active {
+  border: 0;
+}
+/* home page how to report */
+div.additional-content {
+  border-width: 5px;
+  border-style: solid;
+  border-color: #cc3333;
+}
+/* Home Page incidents/Mainstream News blocks */
+div.content-container {
+  background: none;
+  color: #EFEFEF;
+  border-width: 5px;
+  border-style: solid;
+}
+div.content-block {
+  background: transparent;
+}
+
+/* reports listing page */
+#reports-box {
+  width: 655px;
+}
+
+#rb_list-view .rb_report {
+  background: #fff;
+}
+/* single report page */
+div.report-additional-reports h5 {
+  font-family: Arial, sans-serif;
+}
+/* get alerts page */
+.step-1 h2 {
+  padding: 0;
+}
+/* footer */
+div#footer {
+  background: #FFF;
+}
+
+div.footermenu ul li a {
+  text-transform: uppercase;
+  font-weight: bold;
+  border-left: 1px solid #666;
+}
+.additional-credits {
+  margin-top: 18px;
+}
+
+.blackAndBold {
+	font-weight:bolder;
+	color:black;
+	font-family: arial, sans-serif;
+	margin-bottom:0px;
+	letter-spacing:2px;
+	text-transform:uppercase;
+}
+
+.minimizable
+{
+	border: solid 1px #EFEFEF;
+	border-top: solid 1px #aaa;
+	border-bottom: solid 3px #EFEFEF;
+}
+
+.minheader
+{
+	background: #EFEFEF;
+	color:#333;
+	padding-left:15px;
+	padding-right:15px;	
+	text-transform:uppercase;
+	font-size:10px;
+}
+
+.minbutton, .minbutton a{
+	color: #666;
+	letter-spacing: 2px;
+	font-weight:normal;
+	font-size:10px;
+}
+
+.minheader span
+{
+	float:right;
+}
+
+div#bigreportbutton{
+	background: url('../images/reportSubmitButton.png');
+	width: 350px;
+	height: 117px;
+	padding: 0px 0px 0px 0x;
+	margin: 0px 0px 0px 0x;
+}
+
+#nav { z-index: 50; position: absolute; bottom: 10px; left: 35px;}
+#nav a { margin: 0 5px; padding: 1px 2px; color:#333; background: #EFEFEF; text-decoration: none; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+#nav a.activeSlide { background: #333; color:#EFEFEF; }
+#nav a:focus { outline: none; }
+
+
+
+#reportslist-box{
+	width:605px;
+	float:left;
+}
+
+table.table-list tbody tr td {
+	color: #333;
+}
