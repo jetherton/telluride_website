@@ -1,0 +1,494 @@
+/*
+Theme Name: Activian
+Version: 1.0
+Author: John Etherton
+Author Email: john@ethertontech.com
+*/
+
+
+/* Theme Settings
+--------------------*/
+  
+/* Primary Color */
+h1, a,
+table.table-list tbody tr td a,
+.hover .r_details h3 a.r_title,
+div.footermenu ul li a,
+div.search-form input.text  { color: #7e0808; }
+div.search-form input.text:focus,{ border-color: #C40000; }
+div.submit-incident a, .btn_submit,
+div.filters ul li a:hover, div.filters ul li a.active,
+ul.category-filters li a:hover, ul.category-filters li a.active { background-color:#7e0808; }
+
+/* Lighter Primary Color - for hover effects */
+div#loggedin_user_action a, div#loggedin_user_action a:visited { color:#7e0808; }
+div.submit-incident a:hover, .btn_submit:hover,
+div.search-form input.searchbtn { background-color:#7e0808; }
+
+
+/* Accent Color - used on the primary nav and in the footer area */
+div#underfooter { background:#747272; }
+  
+  /* Page Background Pattern */
+  /*----------------------*/
+  body#page { 
+  	background: #585858 url(../images/pg_background.png) repeat-x;
+  }
+  
+
+
+/* Feel free to edit these, but you don't have to. */
+
+/* general styles */
+h1 {
+  font-size: 25px;
+}
+h2 {
+  color: #666;
+}
+h5, h4 {
+  color: #666;
+  font-family: 'PT Sans Narrow', arial, sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+/* structural divs */
+div#middle {
+  background-color: #E7E3DA;
+  border-radius:25px;
+	-moz-border-radius:25px; /* Firefox 3.6 and earlier */
+	border: solid 3px #ccc;
+}
+.big-block {
+  margin-bottom: 26px;
+  padding: 16px 0px 10px;
+}
+div#main {
+  background: none;
+  padding: 0px 0px;
+  margin-top: 0px;
+  min-height:640px;
+}
+/* top-bar */
+#top-bar {
+  width: 100%;
+  background: #000;
+  height: 40px;
+  position: relative;
+}
+div#searchbox {
+  position: absolute;
+  right: 0;
+  border: none;
+  background: transparent;
+  width: auto;
+}
+div#loggedin_user_action {
+  float: left;
+  width: auto;
+}
+div#loggedin_user_action a, div#loggedin_user_action a:visited {
+  font-weight: bold;
+  padding: 6px;
+  margin-top: 2px;
+  width: auto;
+  display: block;
+  float: left;
+}
+div.search-form input.text {
+  border: 1px solid;
+}
+div.search-form input.text:focus {
+  border: 1px solid;
+}
+div.search-form input.searchbtn {
+  width: auto;
+  height: auto;
+  border: 0;
+  text-indent: 0;
+  color: #FFFFFF;
+  display: block;
+  font-size: 12px;
+  background-image:none;
+  margin-left: 10px;
+  line-height: 17px;
+  padding: 2px 5px 3px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 #424242;
+}
+
+/* header */
+/* logo box */
+div#logo {
+  background: transparent;
+  padding-left: 0;
+}
+div#logo h1 a {
+  color: #fff;
+  font-family: 'PT Sans Narrow', arial, sans-serif;
+  font-size: 48px;
+}
+div#logo span {
+  font-style: italic;
+  color: #cc3333;
+  font-family: 'Georgia', serif;
+}
+/* submit report button (in the site header and on the "submit a report" page) */
+div.submit-incident a, .btn_submit {
+  text-shadow: 1px 1px 0 #424242;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+/* primary nav */
+div#mainmenu {
+  	/*background: url('../images/menu-background.png');*/
+  	background:none;
+	border: none;
+  	padding: 0;
+  	position: relative;
+  	
+  	
+}
+div#mainmenu ul {
+  position: relative;
+  bottom: -4px;
+  padding-left:20px;
+}
+div#mainmenu ul li {
+  margin: 0;
+}
+div#mainmenu ul li a {
+  font-family: arial, sans-serif;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left:10px;
+  padding-right:10px;
+  margin-left:10px;
+  margin-right:10px;
+  border: solid 2px #cfcbc3;
+  border-radius:15px;
+	-moz-border-radius:15px; /* Firefox 3.6 and earlier */
+	box-shadow: 5px 5px 5px #b5b2ab;
+}
+div#mainmenu ul li a:hover {
+  box-shadow: 2px 1px 5px #b5b2ab;
+  background: transparent;
+  top: 3px;
+}
+
+div#mainmenu a.active{
+	background: #7E0808;
+	color:#000;
+	border-color: #690808;
+	box-shadow: 5px 5px 5px #7E0808;
+}
+
+div#mainmenu a.active:hover{
+	background: #7E0808;
+	color:#000;
+	border-color: #690808;
+	box-shadow: 2px 1px 5px #7E0808;
+	top:3px;
+}
+
+/* home page map filters */
+div.filters ul li a {
+  color: #666;
+}
+div.filters ul li a:hover, div.filters ul li a.active {
+  text-shadow: 1px 1px 0 #424242;
+  color:#fff;
+}
+/* home page category filter */
+div.cat-filters {
+  /*border-bottom:1px solid #F3686D;*/
+}
+ul.category-filters {
+  border: 5px solid #C4C4C4;
+}
+.swatch, .item-swatch {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+ul.category-filters li a:hover, ul.category-filters li a.active {
+  border: 0;
+}
+/* home page how to report */
+div.additional-content {
+  border: none;
+}
+/* Home Page incidents/Mainstream News blocks */
+div.content-container {
+  background: none;
+  border: none;
+}
+div.content-block {
+  background: transparent;
+}
+
+/* reports listing page */
+#reports-box {
+  width: 655px;
+}
+
+#rb_list-view .rb_report {
+  background: #fff;
+}
+/* single report page */
+div.report-additional-reports h5 {
+  font-family: Arial, sans-serif;
+}
+/* get alerts page */
+.step-1 h2 {
+  padding: 0;
+}
+/* footer */
+div#footer {
+  background: #FFF;
+}
+
+div.footermenu ul li a {
+  text-transform: uppercase;
+  font-weight: bold;
+  border-left: 1px solid #666;
+}
+.additional-credits {
+  margin-top: 18px;
+}
+
+.blackAndBold {
+	font-weight:bolder;
+	color:black;
+	font-family: arial, sans-serif;
+	margin-bottom:0px;
+	letter-spacing:2px;
+	text-transform:uppercase;
+}
+
+.minimizable
+{
+	border: solid 1px #EFEFEF;
+	border-top: solid 1px #aaa;
+	border-bottom: solid 3px #EFEFEF;
+}
+
+.minheader
+{
+	background: #EFEFEF;
+	color:#333;
+	padding-left:15px;
+	padding-right:15px;	
+	text-transform:uppercase;
+	font-size:10px;
+}
+
+.minbutton, .minbutton a{
+	color: #666;
+	letter-spacing: 2px;
+	font-weight:normal;
+	font-size:10px;
+}
+
+.minheader span
+{
+	float:right;
+}
+
+div#bigreportbutton{
+	background: url('../images/reportSubmitButton.png');
+	width: 350px;
+	height: 117px;
+	padding: 0px 0px 0px 0x;
+	margin: 0px 0px 0px 0x;
+}
+
+#nav { z-index: 50; position: absolute; bottom: 10px; left: 35px;}
+#nav a { margin: 0 5px; padding: 1px 2px; color:#333; background: #EFEFEF; text-decoration: none; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+#nav a.activeSlide { background: #333; color:#EFEFEF; }
+#nav a:focus { outline: none; }
+
+
+
+#reportslist-box{
+	width:605px;
+	float:left;
+}
+
+table.table-list tbody tr td {
+	color: #333;
+}
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+.widget {
+width: 100%;
+margin: 0px;
+padding: 0px;
+background: none;
+
+margin-bottom: 0px;
+}
+
+	.widget a {
+	color: #222;
+	text-decoration: none;
+	}
+	
+	.widget a:hover {
+	color: #009;
+	text-decoration: underline;
+	}
+
+	ul.tabnav{
+		margin-top:20px;
+		margin-left:15px;
+		margin-bottom: 10px;
+	}
+	.tabnav li {
+	display: inline;
+	list-style: none;
+	padding-right: 5px;
+	}
+	
+		.tabnav li a {
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #222;
+		font-weight: bold;
+		padding: 4px 6px;
+		outline: none;
+		border: solid 2px #cfcbc3;
+  		border-radius:10px;
+		-moz-border-radius:10px; /* Firefox 3.6 and earlier */
+		box-shadow: 5px 5px 5px #b5b2ab;
+		}
+		
+		.tabnav li a:hover {
+			box-shadow: 2px 1px 5px #b5b2ab;
+			top:3px;
+			position:relative;
+			text-decoration:none;
+			color:#000;
+		}
+		
+		.tabnav li.ui-tabs-selected a {
+			background: #7E0808;
+			color:#000;
+			border-color: #690808;
+			box-shadow: 5px 5px 5px #7E0808;
+		}
+		
+		.tabnav li.ui-tabs-selected a:hover {
+			background: #7E0808;
+			color:#000;
+			border-color: #690808;
+			box-shadow: 2px 1px 5px #7E0808;
+			top:3px;
+			text-decoration:none;
+		}
+		
+	.tabdiv {
+	margin-top: 2px;
+	background: none;
+	border: none;
+	padding: 5px;
+	}
+	
+		.tabdiv li {
+		list-style-image: url("star.png");
+		margin-left: 20px;
+		}
+
+.ui-tabs-hide {
+		display: none;
+		}
+
+		#featuredvid {
+		text-align: center;
+		}
+		
+			.fvid {
+			margin-bottom: 5px;
+			}
+		
+			.vidselector li {
+			text-align: left;
+			list-style: none;
+			padding: 5px;
+			background: #ffffff;
+			border: 1px solid #dedbd1;
+			text-transform: uppercase;
+			margin-bottom: 5px;
+			}
+
+div#graph {
+	display:none;
+}
+
+div#content2{
+	margin:0px 125px 0px 0px;
+	background:none;
+}
+
+div#right{
+	width:auto;
+}
+
+div.play{
+	display:none;
+}
+div#mapStatus{
+display:none;
+}
+div#map{height:500px;	width:730px;}
+div.ui-slider{
+	display:none;
+}
+
+div.slider-holder {
+	font-size: 100%;
+	height: 30px;
+	margin-top: 15px;
+	width: 554px;
+	padding-left: 11px;
+}
+ul.category-filters{
+	padding: 0px 0px;
+	z-index:999;
+	position:relative;
+	left:-10px;
+}
+ul.category-filters li{
+	margin-bottom: 0px;
+	margin-left: 4px;
+	}
+	
+ul.category-filters li a {
+	padding: 4px 5px 4px 5px
+}	
+	
+	
+div#main.report_detail{
+	margin-top:30px;
+}	
